@@ -1,0 +1,48 @@
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #e5e7eb;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.buttonImage {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.buttonText {
+  font-weight: 500;
+}
+
+/* 각 버튼 타입별 스타일 */
+.rock {
+  border-left: 3px solid #3b82f6;
+}
+
+.scissors {
+  border-left: 3px solid #22c55e;
+}
+
+.paper {
+  border-left: 3px solid #f59e0b;
+}

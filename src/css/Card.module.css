@@ -1,0 +1,100 @@
+.card {
+    border-width: 6px;
+    border-style: solid;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    transition: all 0.3s ease;
+}
+
+.user {
+    border-color: #2281c5;
+}
+
+.computer {
+    border-color: #23cd78;
+}
+
+.win {
+    border-color: #f04718;
+    background-color: rgb(255, 255, 255);
+    animation: rad-move 2s ease-in-out infinite alternate;
+}
+
+@keyframes rad-move {
+    0% {
+        transform: translateY(0px);
+        border-radius: 26% 74% 49% 51% / 21% 51% 49% 79%;
+    }
+    25% {
+        border-radius: 74% 26% 50% 50% / 53% 29% 71% 47%;
+    }
+    50% {
+        border-radius: 48% 52% 28% 72% / 45% 71% 29% 55%;
+    }
+    75% {
+        border-radius: 48% 52% 76% 24% / 70% 49% 51% 30%;
+    }
+    100% {
+        transform: translateY(30px);
+        border-radius: 26% 74% 49% 51% / 21% 51% 49% 79%;
+    }
+}
+
+.lose {
+    opacity: 0.3;
+    background-color: rgba(162, 162, 162, 0.5);
+    /* 연한 빨간색 배경 */
+}
+
+.draw {
+    opacity: 0.3;
+    background-color: rgb(189, 189, 189);
+    /* 연한 회색 배경 */
+}
+
+.userTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.user .userTitle {
+    color: #2281c5;
+}
+
+.computer .userTitle {
+    color: #23cd78;
+}
+
+.imageContainer {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.choiceImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.resultText {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.user .resultText {
+    color: #2281c5;
+}
+
+.computer .resultText {
+    color: #23cd78;
+}
