@@ -11,10 +11,10 @@ const App = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const choices2 = {
-    paper: {name: '보', style: "paper"},
-    rock: {name: '바위', style: "rock"},
-    scissors: {name: '가위', style: "scissors"},
-  }
+    paper: { name: "보", style: "paper" },
+    rock: { name: "바위", style: "rock" },
+    scissors: { name: "가위", style: "scissors" },
+  };
 
   const keys = Object.keys(choices2);
   const values = Object.values(choices2);
